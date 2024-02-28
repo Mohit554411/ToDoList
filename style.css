@@ -176,7 +176,7 @@ html {
   @media screen and (max-width: 1050px) {
     .container {
         width: 100%;
-        background-color: rgb(139, 46, 119);
+        /* background-color: rgb(139, 46, 119); */
         margin: 0;
     }
   }
