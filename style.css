@@ -1,0 +1,182 @@
+body {
+    background-color: #f4f4f4;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: rgb(20, 189, 161);
+    padding: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #000;
+    box-sizing: border-box;
+}
+
+.header-section {
+    position: sticky;
+    top: 0;
+}
+
+.header-section h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.header-section form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(143, 143, 143);
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+}
+
+.header-section form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    background-color: inherit;
+    color: inherit;
+}
+
+.header-section form button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(124, 124, 124);
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header-section form button:hover {
+    background-color: rgb(107, 107, 107);
+    transform: scale(1.1);
+}
+
+.main-section {
+    height: calc(100vh - 273px);
+    margin: 20px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px 0px #6d6d6d;
+    border-radius: 5px;
+    color: rgb(143, 143, 143);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.listDetails {
+    width: calc(100%-40px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.listDetails:hover {
+    background-color: rgb(241, 241, 241);
+    transform: scale(1.01);
+}
+
+.listDetails p {
+    width: 83%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: rgb(143, 143, 143);
+    margin: 5px 0;
+    overflow-wrap: break-word;
+}
+
+.listDetails i:hover {
+    transition: all 0.1s ease;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.listDetails input {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    appearance: none;
+    border: 2px solid #333;
+    outline: none;
+    cursor: pointer;
+}
+
+.listDetails input:checked {
+    background-color: rgb(20, 189, 161) !important;
+    border: 2px solid #ffe600;
+    ;
+
+}
+
+.listDetails input:hover {
+    background-color: rgb(20, 189, 161) !important;
+    border: 2px solid #ffe600;
+    ;
+    transform: scale(1.2);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+}
+.footer-container p {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    /* background-color: rgb(230, 230, 230); */
+    font-size: clamp(0.8rem, 1vw, 1.5rem);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.footer-container p:hover {
+    background-color: rgb(14, 160, 136) !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .container {
+        width: 100%;
+        background-color: rgb(139, 46, 119);
+        margin: 0;
+    }
+  }
